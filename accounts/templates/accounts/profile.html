@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<title>Profile</title>
+
+<div class="container">
+
+    <div class="jumbotron">
+<p><h5>Profile:</h5>
+</div>
+    Hi {{ user }},
+    <h6>First Name:  {{user.first_name}} </h6>
+    <h6>Last Name:  {{ user.last_name}}</h6>
+    <h6>Email ID : {{ user.email }}</h6>
+    </p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <h2>Hi!Enter Post: </h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p}}
+        <br><button type="submit">Click to Post</button></form>
+<h2>{{ text }}</h2>
+ {% for post in posts %}
+    <h1>{{ post.title }}</h1>
+    <h3>{{ post.post }}</h3>
+    <h6>by {{ post.user.get_full_name }}</h6>
+
+
+    {% endfor %}
+</div>
+
+{% endblock %}
