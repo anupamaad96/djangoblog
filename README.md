@@ -15,7 +15,7 @@ source venv/bin/activate
 ~/newblog/chatroom/mysite$ python manage.py runserver 1234
 
 # Blog
-(1)login page ,regiter page
+(1)login page ,register page
 (You need to register first and then login with the same)
 
 (2)Home page:
